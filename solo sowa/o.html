@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Maho</title>
+  <style>
+    html, body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: 'Courier New', monospace;
+      overflow-x: hidden;
+      overflow-y: auto;
+      height: auto;
+      max-height: 100vh;
+    }
+
+    
+  @font-face {
+    font-family: 'Beynd';
+    src: url('BEYND.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+ 
+  
+
+
+
+
+
+    h1 {
+      font-size: 9em;
+      text-align: center;
+      margin-top: 1px;
+      color: #ff69b4;
+    
+    }
+    h2{
+      font-size: 5em;
+      text-align: center;
+      margin-top: 5px;
+      color: #ff69b4;
+    }
+    
+
+    .contenido {
+      max-width: 800px;
+      margin: 0 auto;
+      padding-bottom: 50px;
+      min-height: 100vh;
+    }
+
+    p.mensaje {
+      font-size: 1.2em;
+      text-align: center;
+      white-space: pre-line;
+    }
+
+    .caligram-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .palabra {
+      position: absolute;
+      color: pink;
+      opacity: 0.8;
+      font-size: 1em;
+      animation: flotar 10s linear infinite;
+    }
+
+    @keyframes flotar {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+    }
+
+    .botones {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .botones button {
+      background-color: #ff69b4;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      margin: 5px;
+      cursor: pointer;
+      color: white;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Maho </h1> 
+
+  <div class="botones">
+    <button onclick="pausarAudios()">Pausar</button>
+    <button onclick="reproducirAudios()">Reanudar</button>
+  </div>
+
+  <div class="caligram-container" id="caligram"></div>
+
+  <audio id="audio1" src="audio1.mp3.mp3"></audio>
+  <audio id="audio2" src="audio2.m4a" loop></audio>
+
+  <div class="contenido">
+    <p class="mensaje">talvez yo no sepa muchas muchas cosas 
+      pero lo q sise es el porq tu eres y seras 
+      mi amiga y mi persona favorita</p>
+    <p class="mensaje">
+      1. Porque me hace sentir vivo
+    2. Porque su risa es mi paz
+    3. Porque conoce mis silencios
+    4. Porque es mi hogar
+    5. Porque en sus ojos me encontré
+    6. Porque me enseñó a amar
+    7. Porque no teme verme roto
+    8. Porque con ella, todo duele menos
+    9. Porque me entiende sin hablar
+    10. Porque su voz calma mis tormentas
+    11. Porque me abraza incluso a distancia
+    12. Porque me escucha de verdad
+    13. Porque es mi refugio
+    14. Porque su forma de ser es única
+    15. Porque no hay nadie como ella
+    16. Porque es mi persona favorita
+    17. Porque cuidó de mí sin pedir nada
+    18. Porque me hace falta en todo
+    19. Porque su ausencia me lastima
+    20. Porque me dio los mejores momentos
+    21. Porque quererla fue inevitable
+    22. Porque verla feliz me da felizidad
+    23. Porque siempre estuvo ahi 
+    24. Porque es insustituible
+    25. Porque su recuerdo me sostiene
+    26. Porque sin ella, todo es gris
+    27. Porque su forma de quererme es única
+    28. Porque me llena el alma
+    29. Porque con ella puedo ser yo
+    30. Porque hizo de mi caos, poesía
+    31. Porque fue mi compañera fiel
+    32. Porque me cuidó sin condiciones
+    33. Porque sus palabras son abrigo
+    34. Porque me deja huellas, no cicatrices
+    35. Porque me hace sentir especial
+    36. Porque rie conmigo, no de mí(aveces)
+    37. Porque lloraba conmigo, no por mí
+    38. Porque su amor es de verdad
+    39. Porque su amistad es lealtad pura
+    40. Porque me conoce más que yo mismo
+    41. Porque compartimos nuestras inseguridades
+    42. Porque no le importan mis errores
+    43. Porque creyó en mí cuando nadie más
+    44. Porque se quedó cuando todos se fueron
+    45. Porque su mirada decía “te entiendo”
+    46. Porque era mi paz en el caos
+    47. Porque su ausencia pesa más que mil presencias
+    48. Porque en ella confié sin miedo
+    49. Porque mi mundo se acabaria sin ella 
+    50. Porque todo me recuerda a ella
+    51. Porque su nombre es un suspiro
+    52. Porque me hizo querer quedarme
+    53. Porque hacía del dolor algo hermoso
+    54. Porque me mostró que merecía amor
+    55. Porque era mi lugar seguro
+    56. Porque sabía amarme en mis peores días
+    57. Porque nunca me soltó del todo
+    58. Porque siempre fue más que palabras vacias
+    59. Porque su magia es real
+    60. Porque me hizo sentir importante
+    61. Porque su cariño era medicina
+    62. Porque es mi pedacito de tilapia 
+    63. Porque con ella todo es mejor
+    64. Porque es el capitulo mas bonito en mi historia 
+    65. Porque nunca dejaré de esperarla
+    66. Porque la echo de menos siempre q no esta 
+    67. Porque sin ella, la música suena vacía
+    68. Porque es mi calma en la tormenta
+    69. Porque todo lo bueno en mí ella pudo verlo
+    70. Porque con ella no hacía falta más
+    71. Porque es mi amiga 
+    72. Porque aún la llevo dentro(sin malpensar las cosas;3)
+    73. Porque dejó su risa en mi memoria
+    74. Porque me hacía reír con el alma
+    75. Porque cuidaba mi corazón como suyo
+    76. Porque con ella el tiempo volaba
+    77. Porque me devolvió la fe
+    78. Porque era mi poema favorito
+    79. Porque me hacía sentir eterno
+    80. Porque incluso en su ausencia, me acompaña
+    81. Porque no hay día que quiera verla 
+    82. Porque es parte de mi todo
+    83. Porque nadie más me tocó el alma así
+    84. Porque es mi canción sin final
+    85. Porque la sigo a donde sea
+    86. Porque mi mejor versión es con ella
+    87. Porque sus abrazos eran hogar
+    88. Porque tenía la magia de curar
+    89. Porque fue mi más prefunda amistad
+    90. Porque le di el mi confianza sin dudar
+    91. Porque me enseñó a ser mejor
+    92. Porque fue ella aunque no lo supiera
+    93. Porque era el sol de mis días mas oscuros 
+    94. Porque con ella, no existe el miedo
+    95. Porque es la única que me bastaba
+    96. Porque sus despedidad me duelen
+    97. Porque es mi siempre, aunque no sepa por cuanto tiempo la tendre 
+    98. Porque me hizo querer tenerla a mi lado
+    (hasta los 20 q me pege el tiro)
+    99. Porque su amor es real
+    100. Porque sin ella, no soy el mismo
+
+    101. 100 razones del porq te quiero y adoro tanto y
+    aun asi me faltaron tantos motivos, razones, explicaciones, momentos, etc 
+    del porq te considero mi mejor amiga y hasta mas.
+    no solo ers mi amistad mas sincera, profunda y real eres mucho mas para mi 
+    eres risa, eres amor, eres monentos, eres palbras, eres situaciones, eres el seintimiento 
+    el sentimiento de querer estar hay para ti, el sentimiento de nunca alejarme de ti 
+    el sentimiento de querer ser parte de tu vida y q tu seas parte de la mia 
+    la sensacion de saber q tengo alguien q se preocupa por mi 
+    la sensacion de saber lo mucho q sufriria si ti vas 
+    si sigo asi no acabere nunca porq de verdad no son 100 ni 1000 razones del porq t equiero tanto
+    solo queda por decir q 
+   <h2> gracias por todo </h2>
+  
+  
+
+
+   
+    </p>
+  </div>
+
+  <script>
+    const palabras = [
+      "Linda", "Buena amiga", "Cansona", "Chillona", "Hermosa", "Preciosa", "Mimada", "Risueña",
+      "Consentida", "Graciosa", "Traviesa", "Ruidosa", "Encantadora", "Dramática", "mi arrunchis favorito",
+      "Dormilona", "Juguetona", "Bromista", "Desordenada", "Impaciente", "Celosa", "Noble", "Torpe", "divina",
+      "la luz q me ilumina", "Soñadora", "Cariñosa", "Apasionada", "Terca", "Valiente", "Misteriosa", "Tierna",
+      "Inteligente", "Curiosa", "Coqueta", "Rebelde", "Detallista", "Dulce", "Testaruda", "Chismosa",
+      "Despistada", "Sensible", "Inquieta", "Leal", "Brillante", "enana (más pequeña que yo)", "Rencorosa",
+      "Apurada", "Orgullosa", "Perseverante", "Soportable (a veces)", "Insoportable (pero se le quiere)",
+      "Ansiosa", "Descomplicada", "Divertida", "Creativa", "Explosiva", "Intensa", "Espontánea", "Desesperante",
+      "Magnética", "única", "Melancólica", "Cómica", "Dramática", "Amargada (cuando quiere)", "Pegajosa",
+      "tilapia", "Vulnerable", "atun", "rodilla", "ese gallo estaba como raro", "rappi", "Descarada",
+      "Caprichosa", "Empática", "Complicada", "viva petro", "Desesperada", "uribe paraco", "Desbordante",
+      "Culpable", "Energética", "Amable", "Chocante", "Obsesiva", "Callada (muy rara vez)", "Capaz",
+      "Locamente única", "Dramatica", "Pegajosa", "la tengo muy mimada q pereza", "hola", "Impredecible",
+      "Rabiosa", "Luchadora", "Necesaria", "Inolvidable", "Única", "Increíble"
+    ];
+
+    const container = document.getElementById('caligram');
+
+    function mostrarPalabras() {
+      palabras.forEach(() => crearPalabra());
+    }
+
+    function crearPalabra() {
+      const palabra = document.createElement('div');
+      palabra.classList.add('palabra');
+      palabra.textContent = palabras[Math.floor(Math.random() * palabras.length)];
+      palabra.style.left = Math.random() * 100 + 'vw';
+      palabra.style.top = Math.random() * 100 + 'vh';
+      palabra.style.fontSize = (Math.random() * 1.5 + 0.5) + 'em';
+      container.appendChild(palabra);
+      setTimeout(() => palabra.remove(), 10000);
+    }
+
+    setInterval(crearPalabra, 500);
+
+    function reproducirAudios() {
+      const audio1 = document.getElementById('audio1');
+      const audio2 = document.getElementById('audio2');
+
+      audio2.pause();
+      audio2.currentTime = 0;
+
+      audio1.play();
+      mostrarPalabras();
+
+      setTimeout(() => {
+        audio1.pause();
+        audio1.currentTime = 0;
+        audio2.play();
+      }, 44000);
+    }
+
+    function pausarAudios() {
+      document.getElementById('audio1').pause();
+      document.getElementById('audio2').pause();
+    }
+  </script>
+</body>
+</html>
